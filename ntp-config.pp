@@ -3,19 +3,19 @@ class ntp {
  package { 'ntp':
  	ensure => latest,
  }
-#  file { '/etc/ntp.conf':
-# 	source => '/home/yahya/ntp.conf',
-# 	replace => true,
-# 	require => Package['ntp'],
-# 	notify => Service['ntp'],
-#  }
+ file { '/etc/ntp.conf':
+	source => '/home/yahya/ntp.conf',
+	replace => true,
+	require => Package['ntp'],
+	notify => Service['ntp'],
+ }
 
-#  service { 'ntp':
-# 	enable => true,
-# 	ensure => running,
-# 	require => File['/etc/ntp.conf'],
+ service { 'ntp':
+	enable => true,
+	ensure => running,
+	require => File['/etc/ntp.conf'],
 
-#  }
+ }
 
 }
 
