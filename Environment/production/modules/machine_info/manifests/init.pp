@@ -7,9 +7,6 @@ class machine_info {
 
  file { 'machine_info':
        path => $info_path,
-
        content => template('machine_info/info.erb'),
-
    }
-
 }
