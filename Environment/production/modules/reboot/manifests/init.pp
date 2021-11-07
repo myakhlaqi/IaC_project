@@ -1,15 +1,10 @@
 class reboot {
 
   if $facts[kernel] == "windows" {
-
     $cmd = "shutdown /r"
-
   } elsif $facts[kernel] == "Darwin" {
-
     $cmd = "shutdown -r now"
-
   } else {
-
     $cmd = "reboot"
 
   }
