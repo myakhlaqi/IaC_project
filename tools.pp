@@ -1,4 +1,4 @@
 package { 'htop':
-   ensure => present,
+     ensure => present,
 }
 
