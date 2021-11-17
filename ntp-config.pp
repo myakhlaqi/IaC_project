@@ -9,14 +9,11 @@ class ntp {
 	require => Package['ntp'],
 	notify => Service['ntp'],
  }
-
  service { 'ntp':
 	enable => true,
 	ensure => running,
 	require => File['/etc/ntp.conf'],
-
  }
-
 }
 
 include ntp
