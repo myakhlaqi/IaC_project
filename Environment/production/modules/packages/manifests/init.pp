@@ -9,6 +9,7 @@ class packages {
        ensure => installed,
      }
   }
+  
    if $facts[os][family] == "RedHat" {
      package { 'nodejs':
        ensure => installed,
