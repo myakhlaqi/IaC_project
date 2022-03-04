@@ -15,4 +15,5 @@ class packages {
        ensure => installed,
      }
   }
+  
 }
